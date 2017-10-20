@@ -1,0 +1,178 @@
+/*
+"name": "brackets_pryme_light",
+"title": "Brackets Pryme Theme - Light",
+"version": "2.0.4", 
+"description": "Delicate and colourful light theme that makes coding fun and an enjoyable experience. Happy Coding!",
+"homepage": "https://github.com/AriShPryme/brackets_pryme",
+"author": "AriSh <arishpryme@gmail.com> (http://www.prymera.xyz)",
+"license": "MIT",
+"This is a light theme made for brackets. This theme will bring some life to boring coding work."
+*/
+
+
+@background: #e5e5e5;
+@foreground: #333;
+
+/* Color Scheme */
+
+.cm-string {color: #1db300;}
+.cm-string.cm-property {color: #666;}
+.cm-error {background: #FFFF73; color: #dc322f !important;}
+.cm-meta {color: #ff000c;}
+.cm-comment {color: #a8b5a8; font-size:15px; font-style: italic;}
+.cm-atom {color: #0000FF;}
+.cm-number {color: #08c2c2;}
+.cm-link {color: #E88520;text-decoration: none;}
+.cm-property {color: #E88520;}
+.cm-attribute {color: #d702fd;}
+.cm-keyword {color: #FF000C;}
+.cm-variable {color: #ff000c;}
+.cm-variable-2 {color: #bb0012;font-weight:500;}
+.cm-variable-3 {color: #EC7600;}
+.cm-qualifier {color: #d702fd;}
+.cm-builtin {color: #ff000c;}
+.cm-def {color: #bb0012; font-weight:500;}
+.cm-bracket {color: antiquewhite;}
+.cm-operator {color: #ff000c;}
+.cm-tag {color: #0196fe;}
+
+
+/* Editor Style */
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+	background: @background;
+	color: @foreground;
+	font-family: 'Raleway', 'Prestige Elite Std', 'Source Sans Pro' ;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+
+#not-editor,
+#image-holder {
+	background-color: #222;
+	color: #F8F8F2;
+	transition: background-color 0.3s ease-out;
+}
+
+.CodeMirror {
+	border-left-color: #1B1B1B;
+}
+
+div.CodeMirror-selected {
+	background-color: #02fffc;
+	opacity: .35;
+}
+
+.CodeMirror-gutters {
+	background-color: #cccccc;
+	border-right: 1px solid #e3e9e9;
+}
+
+.CodeMirror-guttermarker {
+	color: #F8F8F2;
+}
+
+.CodeMirror-guttermarker-subtle {
+	color: #272822;
+}
+
+.CodeMirror-linenumber {
+	color: #4999cf;
+}
+
+.CodeMirror-cursor {
+	border-left: 2px solid #ff000c !important;
+}
+
+.CodeMirror-activeline-background,
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	background-color: #eaeaea;
+	border-top: 1px solid #fcdada;
+	border-bottom: 1px solid #fcdada;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	background-color: #dedede;
+	color: #0066ad;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
+	background-color: @background;
+	color: #767676;
+}
+
+.CodeMirror-matchingtag {
+	background-color: #eaeaea;
+	border-top: 2px solid #eaeaea;
+	border-bottom: 4px solid #c9c9c9;
+}
+
+
+.CodeMirror-matchingbracket {
+	background-color: #eaeaea !important;
+	color: #FF0303 !important;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 3px solid #c9c9c9;
+	padding-top:3px;
+}
+
+
+/* Extensions */
+
+
+/* Brackets-Vim (https://github.com/megalord/brackets-vim) */
+
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
+	background: rgba(248, 248, 242, 0.5) !important;
+}
+
+
+/* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace) */
+
+.CodeMirror .cm-dk-whitespace-space::before,
+.CodeMirror .cm-dk-whitespace-tab::before,
+.CodeMirror .cm-dk-whitespace-leading-space::before,
+.CodeMirror .cm-dk-whitespace-leading-tab::before,
+.CodeMirror .cm-dk-whitespace-trailing-space::before,
+.CodeMirror .cm-dk-whitespace-trailing-tab::before {
+	background-color: #75715E !important;
+}
+
+
+/* Code Folding (https://github.com/thehogfather/brackets-code-folding) */
+
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter-blank,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-open {
+	color: #75715E;
+}
+
+.CodeMirror-foldgutter-open::after {
+	content: "\25bd";
+}
+
+.CodeMirror-foldmarker {
+	background-color: #bbb;
+	border-color: #555;
+	color: #555;
+	padding: 0 10px;
+}
+
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+	background-color: @background;
+}
+
+#image-holder {
+	color: @foreground;
+}
+
